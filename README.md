@@ -2,31 +2,31 @@
 
 ### Table of Content ###
 
-⦿ Overview
+⦿ [Overview](https://github.com/PassionateDataScientist/Laptop_price_capstone2#overview)
 
-⦿ Data
+⦿ [Data](https://github.com/PassionateDataScientist/Laptop_price_capstone2#data)
 
-⦿ Aim
+⦿ [Aim](https://github.com/PassionateDataScientist/Laptop_price_capstone2#aim)
 
-⦿ Technologies Used
+⦿ [Technologies Used](https://github.com/PassionateDataScientist/Laptop_price_capstone2#technologies-used)
 
-⦿ Data Wrangling
+⦿ [Data Wrangling](https://github.com/PassionateDataScientist/Laptop_price_capstone2#data-wrangling)
 
-⦿ Exploratory Data Analysis
+⦿ [Exploratory Data Analysis](https://github.com/PassionateDataScientist/Laptop_price_capstone2#exploratory-data-analysis)
 
-⦿ Algorithms and Machine Learning
+⦿ [Algorithms and Machine Learning](https://github.com/PassionateDataScientist/Laptop_price_capstone2#algorithms-and-machine-learning)
 
-⦿ Prediction
+⦿ [Prediction](https://github.com/PassionateDataScientist/Laptop_price_capstone2#prediction)
 
-⦿ Future Scope
+⦿ [Future Scope](https://github.com/PassionateDataScientist/Laptop_price_capstone2#future-scope)
 
-⦿ Motivation
+⦿ [Motivation](https://github.com/PassionateDataScientist/Laptop_price_capstone2#motivation)
 
-⦿ Bug/Feature Request
+⦿ [Bug/Feature Request](https://github.com/PassionateDataScientist/Laptop_price_capstone2#bug-feature-request)
 
-⦿ Acknowledgement
+⦿ [Acknowledgement](https://github.com/PassionateDataScientist/Laptop_price_capstone2#acknowledgement)
 
-⦿ Glossary
+⦿ [Glossary](https://github.com/PassionateDataScientist/Laptop_price_capstone2#glossary)
 
 ### Overview ###
 In 2021, approximately 340 million PCs were shipped around the world. The PC market saw its highest growth in 10 years. A Laptop’s lifespan is three to five years. Buying a laptop is an exercise in confusion. Even if you know what everything means, and know exactly what you want, finding it can be difficult, just navigating the manufacturers' websites to try buying the model you want is totally frustrating. This project will help you to find out major components you should consider when you browse for your next PC.
@@ -69,29 +69,34 @@ This project aims to predict the price of a laptop by taking various factors lik
 ### Data Wrangling ###
 Data Wrangling Notebook Click Here
 
-**Feature Name: Memory**
+➠ **Feature Name: Memory**
+
 **Problem:** ‘Memory’ contains Storage Type and Total Storage Capacity. Some Laptops have Mixture of storage type. And Storage Capacity is in different units GB and TB(1000 GB = 1TB).
 
 **Solution:** First, I replaced GB with empty string and TB with ‘000’ to make same unit. I split the combination of the storage data and saved them making two columns ‘para1’ and ‘para2’.‘para1’ and ‘para2’ contains storage capacity and storage type. Still each columns have 2 piece of information. Firstly, I fetched the Storage type by using Lambda and saved them creating eight new columns. Then, Removed Storage Type in ‘para1’ and ‘para2’, and multiply them to those eight columns to get storage capacity. Now, we have Storage Type as a feature name and storage capacity as their respective value.
 
 ----pic---
 
-**Feature Name: ScreenResolution**
+➠ **Feature Name: ScreenResolution**
+
 **Problem:** Feature Name ‘ScreenResolution’ contains useful information like whether the laptop is touchscreen or not, whether it has IPS or not, and resolution of the screen. Our Machine cannot interpret that complex information.
 
 **Solution:** By using individual lambda functions for each piece of information, we fetch the information and save it in different columns. Further, by using the split function, we split x resolution and y resolution and find out PPI (Pixel Per Inches).
 
-**Feature Name: ScreenResolution**
+➠ **Feature Name: ScreenResolution**
+
 Problem: ‘Cpu’, ‘Gpu’ and ‘OpSys’ also contain more than 1 piece of information.
 
 **Solution:** Again, using Lambda function we fetch information from 'Cpu' and save ‘Cpu_ processor’ and ‘Processor_speed_GHz’. For 'Gpu', the best graphics cards are MSI, AMD, and Nvidia. Defining a function, I considered these cards as good and others as average. Again, creating a function, I fetched operating systems.
 
-**Feature Name:** RAM and Weight
+➠ **Feature Name:** RAM and Weight
+
 Problem: ‘RAM' and 'Weight' contain unit (string) with numbers For Example, RAM datatype is object because values are 8GB/4GB, and Weight is in 'kg' unit.
 
 **Solution:** Replaced the unit with empty string, and then convert object datatype to int/float.
 
-**Feature Name: Weight** and **Price**
+➠ **Feature Name: Weight** and **Price**
+
 **Problem:** ‘Weight' and 'Price' is in 'kg' and 'euro' unit.
 
 **Solution:** Converted weight into lb. by multiplying 2.205 (1 kg ≈ 2.205) and converted euro price into Dollar by multiplying 1.14 (1 Euro ≈ 1.14 United States Dollar).
