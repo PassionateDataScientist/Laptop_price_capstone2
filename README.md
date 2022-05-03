@@ -39,7 +39,7 @@ Before beginning to look at laptops, one must figure out various aspects like wh
 ### Data ###
 [Kaggle Dataset](https://www.kaggle.com/datasets/ionaskel/laptop-prices?select=laptops.csv)
 
-The Dataset contains the data for 1300+ laptops and 12 features. Most of the columns in a dataset are noisy and contain lots of information. But with feature engineering I did, I got good results. The only problem is we are having less data but we will obtain a goodaccuracy over it. The only good thing is. it is better to have a large data.
+The Dataset contains the data for 1300+ laptops and 12 features. Most of the columns in a dataset are noisy and contain lots of information. But with feature engineering I did, I got good results. The only problem is we are having less data but we will obtain a good accuracy over it. The only good thing is. it is better to have a large data.
 
 **Features**
 * Company Name
