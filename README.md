@@ -129,27 +129,27 @@ If you find a bug (undesired results), kindly open an issue by including your se
 I would like to Thank You Travis Oliphant for maintaining NumPy library. Wes McKinney for maintaining Pandas library. John D. Hunter for inventing Matplotlib and Michael Droettboom for maintaining Matplotlib. Michael Waskom for creating Seaborn. David Cournapeau for inventing Scikit-learn. Daniel Wu for guiding me in this project.
 
 ### Glossary ###
-**Screen Size:** Size of the screen, measured diagonally from corner to corner.
+► **Screen Size:** Size of the screen, measured diagonally from corner to corner.
 
-**Screen Resolution:** Screens come in a range of resolutions (measured in pixels, horizontal x vertical). The higher the resolution, the greater the picture quality.
+► **Screen Resolution:** Screens come in a range of resolutions (measured in pixels, horizontal x vertical). The higher the resolution, the greater the picture quality.
 
-**Touch Screen:** Touch-screen devices make navigating more intuitive. Using a touch-screen display, you can do things such as tap to select, hold and drag to move items, swipe to scroll, and pinch to zoom.
+► **Touch Screen:** Touch-screen devices make navigating more intuitive. Using a touch-screen display, you can do things such as tap to select, hold and drag to move items, swipe to scroll, and pinch to zoom.
 
-**Processor Model:** Your computer's processor is like its brain. Working in combination with system memory, the power of the processor determines the complexity of software you can run, how many programs you can have open at the same time, and how fast those programs will run. Most computers feature an Intel or AMD processor.
+► **Processor Model:** Your computer's processor is like its brain. Working in combination with system memory, the power of the processor determines the complexity of software you can run, how many programs you can have open at the same time, and how fast those programs will run. Most computers feature an Intel or AMD processor.
 
-**Processor Speed (up to):** Actual central processing unit (CPU) speed may vary by device configuration and design. Also referred to as clock speed, this is how quickly the central processing unit (CPU) can receive and interpret instructions. The higher the number, the more operations per second that can be completed. Working in combination with system memory, the power of the processor determines the complexity of software you can run.
+► **Processor Speed (up to):** Actual central processing unit (CPU) speed may vary by device configuration and design. Also referred to as clock speed, this is how quickly the central processing unit (CPU) can receive and interpret instructions. The higher the number, the more operations per second that can be completed. Working in combination with system memory, the power of the processor determines the complexity of software you can run.
 
-**Solid State Drive Capacity:** The amount of data that can be stored on the device's solid state drive (SSD). SSD is a flash-based storage with faster speeds than a hard disk drive (HDD).
+► **Solid State Drive Capacity:** The amount of data that can be stored on the device's solid state drive (SSD). SSD is a flash-based storage with faster speeds than a hard disk drive (HDD).
 
-**System Memory (RAM):** Random-access memory (RAM) is a computing device's short-term data storage, which allows active information to be accessed quickly. The size and type of RAM determines how efficiently the device can handle large amounts of information at one time. For example, gaming or video editing requires more RAM for optimal performance.
+► **System Memory (RAM):** Random-access memory (RAM) is a computing device's short-term data storage, which allows active information to be accessed quickly. The size and type of RAM determines how efficiently the device can handle large amounts of information at one time. For example, gaming or video editing requires more RAM for optimal performance.
 
-**System Memory RAM Speed:** How fast the information-storing hardware operates. The faster the RAM, the faster memory can be transferred to other system components. Ultimately, faster RAM improves operational efficiency.
+► **System Memory RAM Speed:** How fast the information-storing hardware operates. The faster the RAM, the faster memory can be transferred to other system components. Ultimately, faster RAM improves operational efficiency.
 
-**Graphics Type:** Discrete graphics uses a separate graphics card for processing video images. Because it does not use memory from the system's RAM, there is no extra burden on the CPU and graphics are processed more efficiently. Integrated graphics shares system RAM to process video images.
+► **Graphics Type:** Discrete graphics uses a separate graphics card for processing video images. Because it does not use memory from the system's RAM, there is no extra burden on the CPU and graphics are processed more efficiently. Integrated graphics shares system RAM to process video images.
 
-**Graphics:** Often referred to as a "graphics processing unit" (GPU), this device is responsible for displaying image content and decoding/encoding video content in programs and games.
+► **Graphics:** Often referred to as a "graphics processing unit" (GPU), this device is responsible for displaying image content and decoding/encoding video content in programs and games.
 
-**Operating System:** The operating system manages all software and hardware, including files, memory and connected devices. Most importantly, it lets you interact with your device and your programs in a visual way; otherwise, you'd be typing computer code to get anything done.
+► **Operating System:** The operating system manages all software and hardware, including files, memory and connected devices. Most importantly, it lets you interact with your device and your programs in a visual way; otherwise, you'd be typing computer code to get anything done.
 
-**2-in-1:** A laptop and a tablet combined in one lightweight, portable device. Sometimes referred to as "convertible" or "hybrid" laptops, these devices deliver the processing power and keyboard of a laptop. When you're ready to play, either detach the screen or fold your 2-in-1 into tablet mode to comfortably watch movies, play games, read an e-book and more.
+► **2-in-1:** A laptop and a tablet combined in one lightweight, portable device. Sometimes referred to as "convertible" or "hybrid" laptops, these devices deliver the processing power and keyboard of a laptop. When you're ready to play, either detach the screen or fold your 2-in-1 into tablet mode to comfortably watch movies, play games, read an e-book and more.
 
