@@ -41,19 +41,19 @@ Before beginning to look at laptops, one must figure out various aspects like wh
 
 The Dataset contains the data for 1300+ laptops and 12 features.
 
-_ Features _
-Company Name
-Product Name
-Laptop Type
-Screen Inches
-Screen Resolution
-CPU Model
-RAM Characteristics
-Memory
-GPU Characteristics
-Operating System
-Laptop's Weight
-Laptop's Price
+**Features**
+* Company Name
+* Product Name
+* Laptop Type
+* Screen Inches
+* Screen Resolution
+* CPU Model
+* RAM Characteristics
+* Memory
+* GPU Characteristics
+* Operating System
+* Laptop's Weight
+* Laptop's Price
 
 ### Aim ###
 This project aims to predict the price of a laptop by taking various factors like Name of the Company, Type of the Product, RAM, Memory, CPU, GPU, etc.
@@ -74,33 +74,33 @@ Data Wrangling Notebook [Click Here](https://github.com/PassionateDataScientist/
 
 ➠ **Feature Name: Memory**
 
-**Problem:** ‘Memory’ contains Storage Type and Total Storage Capacity. Some Laptops have Mixture of storage type. And Storage Capacity is in different units GB and TB(1000 GB = 1TB).
+**Problem:** **Memory** contains Storage Type and Total Storage Capacity. Some Laptops have Mixture of storage type. And Storage Capacity is in different units GB and TB(1000 GB = 1TB).
 
-**Solution:** First, I replaced GB with empty string and TB with ‘000’ to make same unit. I split the combination of the storage data and saved them making two columns ‘para1’ and ‘para2’.‘para1’ and ‘para2’ contains storage capacity and storage type. Still each columns have 2 piece of information. Firstly, I fetched the Storage type by using Lambda and saved them creating eight new columns. Then, Removed Storage Type in ‘para1’ and ‘para2’, and multiply them to those eight columns to get storage capacity. Now, we have Storage Type as a feature name and storage capacity as their respective value.
+**Solution:** First, I replaced GB with empty string and TB with **000** to make same unit. I split the combination of the storage data and saved them making two columns ‘para1’ and ‘para2’.‘para1’ and ‘para2’ contains storage capacity and storage type. Still each columns have 2 piece of information. Firstly, I fetched the Storage type by using Lambda and saved them creating eight new columns. Then, Removed Storage Type in ‘para1’ and ‘para2’, and multiply them to those eight columns to get storage capacity. Now, we have Storage Type as a feature name and storage capacity as their respective value.
 
 ![Memory- Value_Counts](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/images/memory.jpg)
 
 ➠ **Feature Name: ScreenResolution**
 
-**Problem:** Feature Name ‘ScreenResolution’ contains useful information like whether the laptop is touchscreen or not, whether it has IPS or not, and resolution of the screen. Our Machine cannot interpret that complex information.
+**Problem:** Feature Name **ScreenResolution** contains useful information like whether the laptop is touchscreen or not, whether it has IPS or not, and resolution of the screen. Our Machine cannot interpret that complex information.
 
 **Solution:** By using individual lambda functions for each piece of information, we fetch the information and save it in different columns. Further, by using the split function, we split x resolution and y resolution and find out PPI (Pixel Per Inches).
 
 ➠ **Feature Name: ScreenResolution**
 
-Problem: ‘Cpu’, ‘Gpu’ and ‘OpSys’ also contain more than 1 piece of information.
+Problem: **Cpu**, **Gpu** and **OpSys** also contain more than 1 piece of information.
 
-**Solution:** Again, using Lambda function we fetch information from 'Cpu' and save ‘Cpu_ processor’ and ‘Processor_speed_GHz’. For 'Gpu', the best graphics cards are MSI, AMD, and Nvidia. Defining a function, I considered these cards as good and others as average. Again, creating a function, I fetched operating systems.
+**Solution:** Again, using Lambda function we fetch information from **Cpu** and save **Cpu_ processor** and **Processor_speed**. For **Gpu**, the best graphics cards are MSI, AMD, and Nvidia. Defining a function, I considered these cards as good and others as average. Again, creating a function, I fetched operating systems.
 
-➠ **Feature Name:** RAM and Weight
+➠ **Feature Name: RAM** and **Weight**
 
-Problem: ‘RAM' and 'Weight' contain unit (string) with numbers For Example, RAM datatype is object because values are 8GB/4GB, and Weight is in 'kg' unit.
+Problem: **RAM** and **Weight** contain unit (string) with numbers For Example, RAM datatype is object because values are 8GB/4GB, and Weight is in **kg** unit.
 
 **Solution:** Replaced the unit with empty string, and then convert object datatype to int/float.
 
 ➠ **Feature Name: Weight** and **Price**
 
-**Problem:** ‘Weight' and 'Price' is in 'kg' and 'euro' unit.
+**Problem:** **Weight** and **Price** is in **kg** and **euro** unit.
 
 **Solution:** Converted weight into lb. by multiplying 2.205 (1 kg ≈ 2.205) and converted euro price into Dollar by multiplying 1.14 (1 Euro ≈ 1.14 United States Dollar).
 
@@ -109,7 +109,7 @@ Exploratory Data Analysis [Click Here](https://github.com/PassionateDataScientis
 
 ![Right Skewed Laptop Price](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/images/price.jpg)
 
-Our target variable is ‘Price’ and the ‘Price’ data is skewed to right. That’s self-explanatory; many laptops in the market have lower prices and few have high prices. Real life distributions are usually skewed. In skewed data, the tail region may act as an outlier for the statistical model, and outliers adversely affect the model ’s performance, especially regression-based models. So there is a necessity to transform the skewed data to close enough to a Gaussian distribution or Normal distribution. A log transformation can help to fit a skewed distribution into a Gaussian one.
+Our target variable is **Price** and the **Price** data is skewed to right. That’s self-explanatory; many laptops in the market have lower prices and few have high prices. Real life distributions are usually skewed. In skewed data, the tail region may act as an outlier for the statistical model, and outliers adversely affect the model ’s performance, especially regression-based models. So there is a necessity to transform the skewed data to close enough to a Gaussian distribution or Normal distribution. A log transformation can help to fit a skewed distribution into a Gaussian one.
 
 ### Algorithms and Machine Learning ###
 PreProcessing and Modeling [Click Here](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/PreProcessing_and_Training_Data_Development.ipynb)
