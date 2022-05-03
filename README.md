@@ -34,7 +34,7 @@ In 2021, approximately 340 million PCs were shipped around the world. The PC mar
 Before beginning to look at laptops, one must figure out various aspects like which operating system (OS), CPU, GPU, RAM, SSD, etc… works best. Once you have decided on your specification, you would like to know what the price of your desired laptops will be. This project helps you to consider your specifications and predict the price!
 
 ### Data ###
-Kaggle Dataset
+[Kaggle Dataset](https://www.kaggle.com/datasets/ionaskel/laptop-prices?select=laptops.csv)
 
 The Dataset contains the data for 1300+ laptops and 12 features.
 
@@ -67,7 +67,7 @@ This project aims to predict the price of a laptop by taking various factors lik
 ‣ Scikit-learn
 
 ### Data Wrangling ###
-Data Wrangling Notebook Click Here
+Data Wrangling Notebook [Click Here](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/Data_Wrangling.ipynb)
 
 ➠ **Feature Name: Memory**
 
@@ -102,14 +102,14 @@ Problem: ‘RAM' and 'Weight' contain unit (string) with numbers For Example, RA
 **Solution:** Converted weight into lb. by multiplying 2.205 (1 kg ≈ 2.205) and converted euro price into Dollar by multiplying 1.14 (1 Euro ≈ 1.14 United States Dollar).
 
 ### Exploratory Data Analysis ###
-Exploratory Data Analysis Click Here
+Exploratory Data Analysis [Click Here](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/Exploratory_Data_Analysis.ipynb)
 
 Our target variable is ‘Price’ and the ‘Price’ data is skewed to right. That’s self-explanatory; many laptops in the market have lower prices and few have high prices. Real life distributions are usually skewed. In skewed data, the tail region may act as an outlier for the statistical model, and outliers adversely affect the model ’s performance, especially regression-based models. So there is a necessity to transform the skewed data to close enough to a Gaussian distribution or Normal distribution. A log transformation can help to fit a skewed distribution into a Gaussian one.
 
 --- pic---
 
 ### Algorithms and Machine Learning ###
-PreProcessing and Modeling Click Here
+PreProcessing and Modeling [Click Here](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/PreProcessing_and_Training_Data_Development.ipynb)
 
 ### Prediction ###
 Some factors that have the largest effect (Correlation) on price of laptops. By taking various features like Storage size, Storage Capacity, processor speed (GHz), Company Name, etc.; you can predict price of your desired laptop!
