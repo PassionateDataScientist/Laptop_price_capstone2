@@ -39,7 +39,7 @@ Before beginning to look at laptops, one must figure out various aspects like wh
 ### Data ###
 [Kaggle Dataset](https://www.kaggle.com/datasets/ionaskel/laptop-prices?select=laptops.csv)
 
-The Dataset contains the data for 1300+ laptops and 12 features.
+The Dataset contains the data for 1300+ laptops and 12 features. Most of the columns in a dataset are noisy and contain lots of information. But with feature engineering I did, I got good results. The only problem is we are having less data but we will obtain a goodaccuracy over it. The only good thing is. it is better to have a large data.
 
 **Features**
 * Company Name
@@ -56,7 +56,7 @@ The Dataset contains the data for 1300+ laptops and 12 features.
 * Laptop's Price
 
 ### Aim ###
-This project aims to predict the price of a laptop by taking various factors like Name of the Company, Type of the Product, RAM, Memory, CPU, GPU, etc.
+I will make a project for Laptop price prediction. The problem statement is that if any user wants to buy a laptop then our application should be compatible to provide a tentative price of laptop according to the user configurations.
 
 ### Technologies Used ###
 ➥ Numpy
@@ -74,9 +74,10 @@ Data Wrangling Notebook [Click Here](https://github.com/PassionateDataScientist/
 
 ➠ **Feature Name: Memory**
 
-**Problem:** **Memory** contains Storage Type and Total Storage Capacity. Some Laptops have Mixture of storage type. And Storage Capacity is in different units GB and TB(1000 GB = 1TB).
+**Problem:** **Memory** column is again a noisy column that gives an understanding of hard drives, Storage Type and Total Storage Capacity. Many laptops came with HHD and SSD both, as well in some there is an external slot present to insert after purchase. This column can disturb your analysis if not feature engineer it properly. And Storage Capacity is in different units GB and TB(1000 GB = 1TB).
 
-**Solution:** First, I replaced GB with empty string and TB with **000** to make same unit. I split the combination of the storage data and saved them making two columns ‘para1’ and ‘para2’.‘para1’ and ‘para2’ contains storage capacity and storage type. Still each columns have 2 piece of information. Firstly, I fetched the Storage type by using Lambda and saved them creating eight new columns. Then, Removed Storage Type in ‘para1’ and ‘para2’, and multiply them to those eight columns to get storage capacity. Now, we have Storage Type as a feature name and storage capacity as their respective value.
+**Solution:**  If you use value counts on a column then we are having 4 different categories of memory as HHD, SSD, Flash storage, and hybrid. First, we have cleaned the memory column and then made 4 new columns which are a binary column where each column contains 1 and 0 indicate that amount four is presentand which is not present. Any laptop has a single type of memory or a combination of two. so in the first column, it consists of the first memory size and if the second slot is
+present in the laptop then the second column contains it else we fill the null values with zero. After that in a particular column, we have multiplied the values by their binary value. It means that if in any laptop particular memory is present then it contains binary value as one and the first value will be multiplied by it, and same with the second combination. For the laptop which does have a second slot, the value will be zero multiplied by zero is zero.
 
 ![Memory- Value_Counts](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/images/memory.jpg)
 
@@ -96,7 +97,7 @@ Problem: **Cpu**, **Gpu** and **OpSys** also contain more than 1 piece of inform
 
 Problem: **RAM** and **Weight** contain unit (string) with numbers For Example, RAM datatype is object because values are 8GB/4GB, and Weight is in **kg** unit.
 
-**Solution:** Replaced the unit with empty string, and then convert object datatype to int/float.
+**Solution:** we need little changes in **RAM** and **Weight** column to convert them to numeric by removing the unit written after value. So we will perform data cleaning here to get the correct types of columns.
 
 ➠ **Feature Name: Weight** and **Price**
 
@@ -109,7 +110,7 @@ Exploratory Data Analysis [Click Here](https://github.com/PassionateDataScientis
 
 ![Right Skewed Laptop Price](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/images/price.jpg)
 
-Our target variable is **Price** and the **Price** data is skewed to right. That’s self-explanatory; many laptops in the market have lower prices and few have high prices. Real life distributions are usually skewed. In skewed data, the tail region may act as an outlier for the statistical model, and outliers adversely affect the model ’s performance, especially regression-based models. So there is a necessity to transform the skewed data to close enough to a Gaussian distribution or Normal distribution. A log transformation can help to fit a skewed distribution into a Gaussian one.
+Our target variable is **Price** and the **Price** data is skewed to right. It is obvious that commodities with low prices are sold and purchased more than the branded ones. Real life distributions are usually skewed. In skewed data, the tail region may act as an outlier for the statistical model, and outliers adversely affect the model ’s performance, especially regression-based models. So there is a necessity to transform the skewed data to close enough to a Gaussian distribution or Normal distribution. A log transformation can help to fit a skewed distribution into a Gaussian one.
 
 ### Algorithms and Machine Learning ###
 PreProcessing and Modeling [Click Here](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/PreProcessing_and_Training_Data_Development.ipynb)
@@ -125,7 +126,8 @@ Some factors that have the largest effect (Correlation) on price of laptops. By 
 • Hyper-parameter tunning can improve the performance.
 
 ### Motivation ###
-Laptop Price Prediction is an important problem. With a successful model for Laptop Price Prediction, we can choose better option! The motivated idea is that, if we know all information about today's laptop’s features, the price is predictable. In 2021, 340 million laptops are forecast to be shipped; this project is for all those 340 million lives!
+Although it looks like a simple project or just developing a model, the dataset we have isnoisy and needs lots of feature engineering, and preprocessing that will drive your interest in developing this project.
+Laptop Price Prediction is an important problem. With a successful model for Laptop Price Prediction, we can choose better option! The motivated idea is that, if we know all information about laptop’s features, the price is predictable. In 2021, 340 million laptops are forecast to be shipped; this project is for all those 340 million lives!
 
 ### Bug/ Feature Request ###
 If you find a bug (undesired results), kindly open an issue by including your search query and the expected result [Click Here](https://docs.google.com/forms/d/e/1FAIpQLScN8fZ532hvd9QVAZifRnjcAysQXjaXobGxOhNGJ-A9QzJKtA/viewform?usp=sf_link)
