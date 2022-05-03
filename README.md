@@ -1,4 +1,5 @@
 # Laptop price Prediction
+![Laptop Price Prediction](https://raw.githubusercontent.com/PassionateDataScientist/Laptop_price_capstone2/main/images/laptops.webp)
 
 ### Table of Content ###
 
@@ -106,12 +107,14 @@ Problem: ‘RAM' and 'Weight' contain unit (string) with numbers For Example, RA
 ### Exploratory Data Analysis ###
 Exploratory Data Analysis [Click Here](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/Exploratory_Data_Analysis.ipynb)
 
-Our target variable is ‘Price’ and the ‘Price’ data is skewed to right. That’s self-explanatory; many laptops in the market have lower prices and few have high prices. Real life distributions are usually skewed. In skewed data, the tail region may act as an outlier for the statistical model, and outliers adversely affect the model ’s performance, especially regression-based models. So there is a necessity to transform the skewed data to close enough to a Gaussian distribution or Normal distribution. A log transformation can help to fit a skewed distribution into a Gaussian one.
-
 ![Right Skewed Laptop Price](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/images/price.jpg)
+
+Our target variable is ‘Price’ and the ‘Price’ data is skewed to right. That’s self-explanatory; many laptops in the market have lower prices and few have high prices. Real life distributions are usually skewed. In skewed data, the tail region may act as an outlier for the statistical model, and outliers adversely affect the model ’s performance, especially regression-based models. So there is a necessity to transform the skewed data to close enough to a Gaussian distribution or Normal distribution. A log transformation can help to fit a skewed distribution into a Gaussian one.
 
 ### Algorithms and Machine Learning ###
 PreProcessing and Modeling [Click Here](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/PreProcessing_and_Training_Data_Development.ipynb)
+
+![Algorithm Matrix](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/images/Algorithm%20Matrix.jpg)
 
 ### Prediction ###
 Some factors that have the largest effect (Correlation) on price of laptops. By taking various features like Storage size, Storage Capacity, processor speed (GHz), Company Name, etc.; you can predict price of your desired laptop!
@@ -128,7 +131,7 @@ Laptop Price Prediction is an important problem. With a successful model for Lap
 If you find a bug (undesired results), kindly open an issue by including your search query and the expected result [Click Here](https://docs.google.com/forms/d/e/1FAIpQLScN8fZ532hvd9QVAZifRnjcAysQXjaXobGxOhNGJ-A9QzJKtA/viewform?usp=sf_link)
 
 ### Acknowledgement ###
-I would like to Thank You Travis Oliphant for maintaining NumPy library. Wes McKinney for maintaining Pandas library. John D. Hunter for inventing Matplotlib and Michael Droettboom for maintaining Matplotlib. Michael Waskom for creating Seaborn. David Cournapeau for inventing Scikit-learn. Daniel Wu for guiding me in this project.
+I would like to _Thank You_ **Travis Oliphant** for maintaining NumPy library, **Wes McKinney** for maintaining Pandas library, **John D. Hunter** for inventing Matplotlib and **Michael Droettboom** for maintaining Matplotlib, **Michael Waskom** for creating Seaborn, **David Cournapeau** for inventing Scikit-learn, **Daniel Wu** for guiding me in this project.
 
 ### Glossary ###
 ► **Screen Size:** Size of the screen, measured diagonally from corner to corner.
