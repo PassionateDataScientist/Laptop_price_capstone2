@@ -123,7 +123,7 @@ Some factors that have the largest effect (Correlation) on price of laptops. By 
 Laptop Price Prediction is an important problem. With a successful model for Laptop Price Prediction, we can choose better option! The motivated idea is that, if we know all information about today's laptop’s features, the price is predictable. In 2021, 340 million laptops are forecast to be shipped; this project is for all those 340 million lives!
 
 ### Bug/ Feature Request ###
-If you find a bug (undesired results), kindly open an issue by including your search query and the expected result Click Here
+If you find a bug (undesired results), kindly open an issue by including your search query and the expected result [Click Here](https://docs.google.com/forms/d/e/1FAIpQLScN8fZ532hvd9QVAZifRnjcAysQXjaXobGxOhNGJ-A9QzJKtA/viewform?usp=sf_link)
 
 ### Acknowledgement ###
 I would like to Thank You Travis Oliphant for maintaining NumPy library. Wes McKinney for maintaining Pandas library. John D. Hunter for inventing Matplotlib and Michael Droettboom for maintaining Matplotlib. Michael Waskom for creating Seaborn. David Cournapeau for inventing Scikit-learn. Daniel Wu for guiding me in this project.
