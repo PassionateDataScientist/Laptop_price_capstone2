@@ -33,6 +33,8 @@ In 2021, approximately 340 million PCs were shipped around the world. The PC mar
 
 Before beginning to look at laptops, one must figure out various aspects like which operating system (OS), CPU, GPU, RAM, SSD, etc… works best. Once you have decided on your specification, you would like to know what the price of your desired laptops will be. This project helps you to consider your specifications and predict the price!
 
+![Share of households with a PC at home worldwide](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/images/computer_share.jpg)
+
 ### Data ###
 [Kaggle Dataset](https://www.kaggle.com/datasets/ionaskel/laptop-prices?select=laptops.csv)
 
@@ -56,15 +58,15 @@ Laptop's Price
 This project aims to predict the price of a laptop by taking various factors like Name of the Company, Type of the Product, RAM, Memory, CPU, GPU, etc.
 
 ### Technologies Used ###
-‣ Numpy
+➥ Numpy
 
-‣ Pandas
+➥ Pandas
 
-‣ Matplotlib
+➥ Matplotlib
 
-‣ Seaborn
+➥ Seaborn
 
-‣ Scikit-learn
+➥ Scikit-learn
 
 ### Data Wrangling ###
 Data Wrangling Notebook [Click Here](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/Data_Wrangling.ipynb)
@@ -75,7 +77,7 @@ Data Wrangling Notebook [Click Here](https://github.com/PassionateDataScientist/
 
 **Solution:** First, I replaced GB with empty string and TB with ‘000’ to make same unit. I split the combination of the storage data and saved them making two columns ‘para1’ and ‘para2’.‘para1’ and ‘para2’ contains storage capacity and storage type. Still each columns have 2 piece of information. Firstly, I fetched the Storage type by using Lambda and saved them creating eight new columns. Then, Removed Storage Type in ‘para1’ and ‘para2’, and multiply them to those eight columns to get storage capacity. Now, we have Storage Type as a feature name and storage capacity as their respective value.
 
-----pic---
+![Memory- Value_Counts](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/images/memory.jpg)
 
 ➠ **Feature Name: ScreenResolution**
 
@@ -106,7 +108,7 @@ Exploratory Data Analysis [Click Here](https://github.com/PassionateDataScientis
 
 Our target variable is ‘Price’ and the ‘Price’ data is skewed to right. That’s self-explanatory; many laptops in the market have lower prices and few have high prices. Real life distributions are usually skewed. In skewed data, the tail region may act as an outlier for the statistical model, and outliers adversely affect the model ’s performance, especially regression-based models. So there is a necessity to transform the skewed data to close enough to a Gaussian distribution or Normal distribution. A log transformation can help to fit a skewed distribution into a Gaussian one.
 
---- pic---
+![Right Skewed Laptop Price](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/images/price.jpg)
 
 ### Algorithms and Machine Learning ###
 PreProcessing and Modeling [Click Here](https://github.com/PassionateDataScientist/Laptop_price_capstone2/blob/main/PreProcessing_and_Training_Data_Development.ipynb)
