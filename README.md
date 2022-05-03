@@ -157,4 +157,3 @@ I would like to _Thank You_ **Travis Oliphant** for maintaining NumPy library, *
 ► **Operating System:** The operating system manages all software and hardware, including files, memory and connected devices. Most importantly, it lets you interact with your device and your programs in a visual way; otherwise, you'd be typing computer code to get anything done.
 
 ► **2-in-1:** A laptop and a tablet combined in one lightweight, portable device. Sometimes referred to as "convertible" or "hybrid" laptops, these devices deliver the processing power and keyboard of a laptop. When you're ready to play, either detach the screen or fold your 2-in-1 into tablet mode to comfortably watch movies, play games, read an e-book and more.
-
