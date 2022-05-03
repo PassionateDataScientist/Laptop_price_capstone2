@@ -1,6 +1,7 @@
-# Laptop_price_capstone2
-Laptop_price_capstone2
-Table of Content
+# Laptop price Prediction
+
+### Table of Content ###
+
 ⦿ Overview
 
 ⦿ Data
