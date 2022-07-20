@@ -125,6 +125,8 @@ Some factors that have the largest effect (Correlation) on price of laptops. By 
 
 • Hyper-parameter tunning can improve the performance.
 
+• change current Euros to US Dollars exchange rate.
+
 ### Motivation ###
 Although it looks like a simple project or just developing a model, the dataset we have is noisy and needs lots of feature engineering, and preprocessing that will drive your interest in developing this project.
 Laptop Price Prediction is an important problem. With a successful model for Laptop Price Prediction, we can choose better option! The motivated idea is that, if we know all information about laptop’s features, the price is predictable. In 2021, 340 million laptops are forecast to be shipped; this project is for all those 340 million lives!
